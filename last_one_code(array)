@@ -1,16 +1,20 @@
 def calculate():
   i = int(input())
   s = list(map(int,input().split(' ')))
+  
   s.reverse()
   try:
+  
     index = s.index(1)
     return len(s)-index-1
   except:
+  
     return -1
  
 T = int(input())   
 l =[]
 for x in range(T):
+
    l.append(calculate())
 for x in l:
    print(x)
